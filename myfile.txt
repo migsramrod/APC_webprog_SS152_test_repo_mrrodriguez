@@ -1,2 +1,2 @@
 hello, this is the repository of miggie rodriguez
-
+Completed my first commit and push
