@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyHomepage</title>
+<style>
+body{
+	background-image: url("image.jpg");
+	background-repeat: no-repeat;
+}
+</style>
+<body>
+
+<h1 style="color:white;" > My Homepage </h1>
+<p><font color="white"> <strong>Name:</strong> Miggie R. Rodriguez</font></p>
+<p><font color="white"> <strong>Nickname:</strong> Migs</font></p>
+<p><font color="white"> <strong>Hobbies and Interest:</strong> Biking and basketball</font></p>
+
+<img src="download.jpg" alt="biking View" style="width:304px;height:228px;"> <</br>
+<img src="images.jpg" alt="basketball" style="width:304px;height:228px;"></p>
+ 
+ <body link="white">
+<a href="http://www.facebook.com">www.Facebook.com Visit my favorite website</a>
+ 
+</body>
+</html>
+
