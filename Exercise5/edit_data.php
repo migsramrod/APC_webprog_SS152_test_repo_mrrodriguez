@@ -4,7 +4,7 @@ if(isset($_GET['edit_id']))
 {
  $sql_query="SELECT * FROM users WHERE user_id=".$_GET['edit_id'];
  $result_set=mysqli_query($con,$sql_query);
- $fetched_row=mysql_fetch_array($result_set);
+ $fetched_row=mysqli_fetch_array($result_set);
 }
 if(isset($_POST['btn-update']))
 {
@@ -47,7 +47,7 @@ if(isset($_POST['btn-cancel']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CRUD Operations With PHP and MySql - By Cleartuts</title>
+<title>CRUD Operations With PHP and MySql </title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
@@ -55,7 +55,7 @@ if(isset($_POST['btn-cancel']))
 
 <div id="header">
  <div id="content">
-    <label>CRUD Operations With PHP and MySql - By Cleartuts</label>
+    <label>CRUD Operations With PHP and MySql</label>
     </div>
 </div>
 
