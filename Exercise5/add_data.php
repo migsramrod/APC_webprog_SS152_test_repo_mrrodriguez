@@ -37,7 +37,7 @@ if(isset($_POST['btn-save']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CRUD Operations With PHP and MySql - By Cleartuts</title>
+<title>CRUD Operations With PHP and MySql </title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
@@ -45,7 +45,7 @@ if(isset($_POST['btn-save']))
 
 <div id="header">
  <div id="content">
-    <label>CRUD Operations With PHP and MySql - By Cleartuts</label>
+    <label>CRUD Operations With PHP and MySql </label>
     </div>
 </div>
 <div id="body">
