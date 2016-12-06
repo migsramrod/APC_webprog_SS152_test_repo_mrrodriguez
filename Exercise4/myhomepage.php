@@ -175,6 +175,8 @@ function test_input($data) {
   Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
+  Nickname: <input type = "text" nickname="nickname">
+  
   E-mail: <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
@@ -189,19 +191,24 @@ function test_input($data) {
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
+   Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
 </form>
 
 <?php
 echo "<h2>Your Input:</h2>";
 echo $name;
 echo "<br>";
+echo $nickname;
+echo "<br>";
 echo $email;
 echo "<br>";
 echo $website;
 echo "<br>";
+echo $gender;
+echo "<br>";
 echo $comment;
 echo "<br>";
-echo $gender;
+echo $cellphone;
 ?>
 
 </body>
