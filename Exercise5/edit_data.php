@@ -9,13 +9,17 @@ if(isset($_GET['edit_id']))
 if(isset($_POST['btn-update']))
 {
  // variables for input data
- $first_name = $_POST['first_name'];
- $last_name = $_POST['last_name'];
- $city_name = $_POST['city_name'];
+ $Complete_name = $_POST['Complete_name'];
+ $Nickname = $_POST['Nickname'];
+ $Email_Address = $_POST['Email_Address'];
+ $Home_Address = $_POST['Home_Address'];
+ $Gender = $_POST['Gender'];
+ $Cellphone = $_POST['Cellphone'];
+ $Comments = $_POST['Comments'];
  // variables for input data
 
  // sql query for update data into database
- $sql_query = "UPDATE users SET first_name='$first_name',last_name='$last_name',user_city='$city_name' WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET Complete_name='$Complete_name',Nickname='$Nickname',Email_Address='$Email_Address',Home_Address='$Home_Address',Gender='$Gender',Cellphone='$Cellphone',Comments='$Comments' WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
@@ -64,13 +68,25 @@ if(isset($_POST['btn-cancel']))
     <form method="post">
     <table align="center">
     <tr>
-    <td><input type="text" name="first_name" placeholder="First Name" value="<?php echo $fetched_row['first_name']; ?>" required /></td>
+    <td><input type="text" name="Complete_name" placeholder="Full name" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="last_name" placeholder="Last Name" value="<?php echo $fetched_row['last_name']; ?>" required /></td>
+    <td><input type="text" name="Nickname" placeholder="Nickname" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="city_name" placeholder="City" value="<?php echo $fetched_row['user_city']; ?>" required /></td>
+    <td><input type="text" name="Email_Address" placeholder="Email Address" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Home_Address" placeholder="Home Address" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Gender" placeholder="Gender" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Cellphone" placeholder="Cellphone" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Comments" placeholder="Comments: optional" required /></td>
     </tr>
     <tr>
     <td>
