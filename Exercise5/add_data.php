@@ -3,9 +3,13 @@ include_once 'dbconfig.php';
 if(isset($_POST['btn-save']))
 {
  // variables for input data
- $first_name = $_POST['first_name'];
- $last_name = $_POST['last_name'];
- $city_name = $_POST['city_name'];
+ $Complete_name = $_POST['Complete_name'];
+ $Nickname = $_POST['Nickname'];
+ $Email_Address = $_POST['Email_Address'];
+ $Home_Address = $_POST['Home_Address'];
+ $Gender = $_POST['Gender'];
+ $Cellphone = $_POST['Cellphone'];
+ $Comments = $_POST['Comments'];
  // variables for input data
 
  // sql query for inserting data into database
@@ -56,13 +60,25 @@ if(isset($_POST['btn-save']))
     <td align="center"><a href="index.php">back to main page</a></td>
     </tr>
     <tr>
-    <td><input type="text" name="first_name" placeholder="First Name" required /></td>
+    <td><input type="text" name="Complete_name" placeholder="Full name" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="last_name" placeholder="Last Name" required /></td>
+    <td><input type="text" name="Nickname" placeholder="Nickname" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="city_name" placeholder="City" required /></td>
+    <td><input type="text" name="Email_Address" placeholder="Email Address" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Home_Address" placeholder="Home Address" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Gender" placeholder="Gender" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Cellphone" placeholder="Cellphone" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Comments" placeholder="Comments: optional" required /></td>
     </tr>
     <tr>
     <td><button type="submit" name="btn-save"><strong>SAVE</strong></button></td>
