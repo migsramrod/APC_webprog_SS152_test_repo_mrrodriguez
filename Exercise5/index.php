@@ -55,8 +55,7 @@ function delete_id(id)
 	<th>Address</th>
 	<th>Comment</th>
 	<th>Gender</th>
-	
-	 <th>Cellphone</th>
+	<th>Cellphone</th>
     <th colspan="3">Operations</th>
     </tr>
     <?php
