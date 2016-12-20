@@ -18,7 +18,7 @@ if(isset($_GET['delete_id']))
 <title>CRUD Operations With PHP and MySql</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 <script type="text/javascript">
-function edt_id(id)dsddsdsadsdsdasda
+function edt_id(id)
 {
  if(confirm('Sure to edit ?'))
  {
