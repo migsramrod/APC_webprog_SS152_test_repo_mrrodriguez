@@ -68,25 +68,25 @@ if(isset($_POST['btn-cancel']))
     <form method="post">
     <table align="center">
     <tr>
-    <td><input type="text" name="Complete_name" placeholder="Full name" required /></td>
+    <td><input type="text" name="Complete_name" placeholder="Full name" value="<?php echo $fetched_row['Complete_name']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="Nickname" placeholder="Nickname" required /></td>
+    <td><input type="text" name="Nickname" placeholder="Nickname" value="<?php echo $fetched_row['Nickname']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="Email_Address" placeholder="Email Address" required /></td>
+    <td><input type="text" name="Email_Address" placeholder="Email Address" value="<?php echo $fetched_row['Email_Address']; ?>" required /></td>
     </tr>
 	<tr>
-    <td><input type="text" name="Home_Address" placeholder="Home Address" required /></td>
+    <td><input type="text" name="Home_Address" placeholder="Home Address" value="<?php echo $fetched_row['Home_Address']; ?>" required /></td>
     </tr>
 	<tr>
-    <td><input type="text" name="Gender" placeholder="Gender" required /></td>
+    <td><input type="text" name="Gender" placeholder="Gender" value="<?php echo $fetched_row['Gender']; ?>" required /></td>
     </tr>
 	<tr>
-    <td><input type="text" name="Cellphone" placeholder="Cellphone" required /></td>
+    <td><input type="text" name="Cellphone" placeholder="Cellphone" value="<?php echo $fetched_row['Cellphone']; ?>" required /></td>
     </tr>
 	<tr>
-    <td><input type="text" name="Comments" placeholder="Comments: optional" required /></td>
+    <td><input type="text" name="Comments" placeholder="Comments: optional" value="<?php echo $fetched_row['Comments']; ?>" required /></td>
     </tr>
     <tr>
     <td>
