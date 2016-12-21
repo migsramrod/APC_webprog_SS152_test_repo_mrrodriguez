@@ -8,7 +8,7 @@ class News extends CI_Controller {
     }
     public function index()
     {
-        $data['news'] = $this->users_model->get_users();
+        $data['users'] = $this->users_model->get_users();
         $data['title'] = 'users archive';
         $this->load->view('templates/header', $data);
         $this->load->view('users/index', $data);
@@ -16,7 +16,7 @@ class News extends CI_Controller {
     }
     public function view($slug = NULL)
     {
-        $data['news_item'] = $this->news_model->get_news($slug);
+        $data['Users_item'] = $this->User_model->get_Users($slug);
         
         if (empty($data['news_item']))
         {
